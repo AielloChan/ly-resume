@@ -401,7 +401,7 @@ function LineSpirit(options) {
     addEventListener("resize", init, false);
   }, 15);
 }
-},{}],8:[function(require,module,exports) {
+},{}],16:[function(require,module,exports) {
 "use strict";
 
 require("../styles/index.scss");
@@ -422,8 +422,8 @@ setTimeout(function () {
   loadDom.style.opacity = "0";
   pageDom.style.display = "flex";
   (0, _lineSpirit.init)();
-}, 0);
-},{"../styles/index.scss":22,"./map.js":33,"./lineSpirit.js":23}],30:[function(require,module,exports) {
+}, 1500);
+},{"../styles/index.scss":22,"./map.js":33,"./lineSpirit.js":23}],23:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -452,7 +452,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63658' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '65051' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -593,5 +593,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[30,8], null)
+},{}]},{},[23,16], null)
 //# sourceMappingURL=/scripts.026d39f5.map
